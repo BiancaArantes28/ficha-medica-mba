@@ -1,5 +1,5 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 export const useFormHealthDataPage = () => {
     const {
@@ -10,7 +10,12 @@ export const useFormHealthDataPage = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => console.log(data);
+    const navigate = useNavigate();
+
+    const onSubmit = (data) => {
+        console.log(data);
+        navigate('view-health-data');
+    };
 
     return {
         register,
