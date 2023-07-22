@@ -1,11 +1,8 @@
 import React from 'react';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableRow from '@mui/material/TableRow';
-import { TableComponent } from '../../components/TableComponent/views/TableComponent';
 import { UserData } from './components/UserData/UserData';
 import { ViewHealthDataBox } from '../styles/ViewHealthDataStyles';
 import { HealthData } from './components/HealthData.js/HealthData';
+import { Contacts } from './components/Contacts/Contacts';
 
 export const ViewHealthDataPage = () => {
 
@@ -13,6 +10,7 @@ export const ViewHealthDataPage = () => {
         <ViewHealthDataBox>
             <UserData />
             <HealthData />
+            <Contacts />
         </ViewHealthDataBox>
     );
 };

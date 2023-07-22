@@ -5,10 +5,15 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import { HealthDataStyles } from '../../../styles/HealthDataStyles';
 
 export const HealthData = () => {
     return (
-        <>
+        <HealthDataStyles>
+            <Typography variant="h5">
+                Dados de saúde:
+            </Typography>
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: '100%' }} aria-label="spanning table">
                     <TableBody>
@@ -35,6 +40,6 @@ export const HealthData = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </>
+        </HealthDataStyles>
     );
 };
