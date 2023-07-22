@@ -5,12 +5,14 @@ import TableRow from '@mui/material/TableRow';
 import { TableComponent } from '../../components/TableComponent/views/TableComponent';
 import { UserData } from './components/UserData/UserData';
 import { ViewHealthDataBox } from '../styles/ViewHealthDataStyles';
+import { HealthData } from './components/HealthData.js/HealthData';
 
 export const ViewHealthDataPage = () => {
 
     return (
         <ViewHealthDataBox>
             <UserData />
+            <HealthData />
         </ViewHealthDataBox>
     );
 };
